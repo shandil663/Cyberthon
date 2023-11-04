@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cyberthon</string>
+    <string name="hos">Sector/Village/Locality</string>
+    <string name="nature">Nature of complaint</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "554653440274",
+    "project_id": "cyberthon-8e6f0",
+    "storage_bucket": "cyberthon-8e6f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554653440274:android:b2fd5b9ab2a31abb15fbcb",
+        "android_client_info": {
+          "package_name": "com.example.cyberthon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsMP9QNcvYCxPTcoZSujrPfa5md6_7EUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
