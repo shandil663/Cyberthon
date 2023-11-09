@@ -29,7 +29,7 @@ public class Messagemodal {
         this.key = key;
     }
 
-    public Messagemodal(String message, String name, String key) {
+    public Messagemodal(String message, String name) {
         this.message = message;
         this.name = name;
         this.key = key;

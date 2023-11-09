@@ -18,8 +18,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.auth.User;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
+
+import java.util.ArrayList;
 
 public class Registeration extends AppCompatActivity {
 TextView txt;
@@ -27,6 +30,7 @@ TextView txt;
 FirebaseAuth mAuth;
 FirebaseDatabase db;
 EditText txt1,txt2;
+ArrayList<UserModal> user1;
 Button btn;
     public void onStart() {
         super.onStart();
@@ -64,7 +68,9 @@ Button btn;
                                 if (task.isSuccessful()) {
                                     db=FirebaseDatabase.getInstance();
                                     FirebaseUser user= mAuth.getCurrentUser();
-                                    db.getReference("Users").child(user.getUid()).child("email").setValue(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    UserModal u =new UserModal();
+                                    u.setEmail(email);
+                                    db.getReference("Users").child(user.getUid()).child("email").setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@androidx.annotation.NonNull Task<Void> task) {
                                             Toast.makeText(Registeration.this, "Values added", Toast.LENGTH_SHORT).show();

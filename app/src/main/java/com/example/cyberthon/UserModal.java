@@ -2,7 +2,7 @@ package com.example.cyberthon;
 
 public class UserModal {
     String uid;
-    String name,email;
+    String email;
 
     public String getUid() {
         return uid;
@@ -12,13 +12,6 @@ public class UserModal {
         this.uid = uid;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getEmail() {
         return email;
@@ -28,9 +21,8 @@ public class UserModal {
         this.email = email;
     }
 
-    public UserModal(String uid, String name, String email) {
+    public UserModal(String uid, String email) {
         this.uid = uid;
-        this.name = name;
         this.email = email;
     }
 
@@ -41,7 +33,6 @@ public class UserModal {
     public String toString() {
         return "UserModal{" +
                 "uid='" + uid + '\'' +
-                ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }

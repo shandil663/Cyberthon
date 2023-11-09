@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class MainPage extends AppCompatActivity {
 
-    CardView card1,card2,card3;
+    CardView card1,card2,card3,cardprofile,chatcard1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,20 @@ public class MainPage extends AppCompatActivity {
      card1=findViewById(R.id.newcard);
      card2=findViewById(R.id.casecard);
      card3=findViewById(R.id.evicard1);
+     chatcard1=findViewById(R.id.chatcard1);
+     chatcard1.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+             startActivity(new Intent(MainPage.this, Communication.class));
+         }
+     });
+     cardprofile=findViewById(R.id.profile);
+     cardprofile.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+             startActivity(new Intent(MainPage.this,Profile1.class));
+         }
+     });
      card3.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View view) {

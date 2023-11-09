@@ -10,8 +10,6 @@
     app:cardCornerRadius="20dp"
     app:cardElevation="5dp"
     app:cardUseCompatPadding="true"
-
-
     >
 
     <androidx.cardview.widget.CardView
