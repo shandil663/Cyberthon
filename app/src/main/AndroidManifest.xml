@@ -2,9 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +23,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cyberthon"
         tools:targetApi="31">
+        <activity
+            android:name=".oading"
+            android:exported="false" />
+      <activity android:name=".casebasedoncategory"
+          android:exported="false">
+          <meta-data
+              android:name="android.support.PARENT_ACTIVITY"
+              android:value="com.example.cyberthon.MainPage" />
+      </activity>
+
+        <activity
+            android:name=".Testactivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBqTTuXebDJ8gJ9sjZe3niUBrbXanUXI0U" />
+
+        <activity
+            android:name=".casestudy"
+            android:exported="false" />
+        <activity
+            android:name=".Casedeepdetails"
+            android:exported="false" />
+        <activity
+            android:name=".insightscaseview"
+            android:exported="false" />
+        <activity
+            android:name=".training"
+            android:exported="false" />
+        <activity
+            android:name=".insights"
+            android:exported="false" />
+        <activity
+            android:name=".emergency"
+            android:exported="false" />
         <activity
             android:name=".caseassigned"
             android:exported="false" />

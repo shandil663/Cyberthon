@@ -40,7 +40,7 @@ Messagemodal msg= messages.get(position);
                if(msg.getName().equals(AllMethods.email)){
     holder.txt.setText("You: " + msg.getMessage());
     holder.txt.setGravity(Gravity.START);
-    holder.L1.setBackgroundColor(Color.parseColor("#EF9E73"));
+    holder.L1.setBackgroundColor(Color.parseColor("#ABC4F5"));
 
         }
 

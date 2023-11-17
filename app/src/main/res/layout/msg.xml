@@ -20,12 +20,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:id="@+id/L1msg"
-                android:background="#5DA868">
+                android:background="#E6F6F4">
                 <TextView
                     android:id="@+id/txt1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:text="Random text"
                     android:padding="5sp"

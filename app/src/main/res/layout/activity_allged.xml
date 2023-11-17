@@ -46,16 +46,17 @@
             android:backgroundTint="@color/text"
             android:text="File Complaint"
             android:textSize="18sp" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10sp"
             android:layout_marginTop="15sp"
-            android:textStyle="bold"
-            android:textSize="15sp"
+            android:text="Alleged Details"
             android:textColor="@color/black"
-            android:text="Alleged Details" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/allegedname"
@@ -72,6 +73,7 @@
             android:padding="10sp"
             android:textSize="20sp"
             android:textStyle="normal" />
+
         <EditText
             android:id="@+id/allegedmobile"
             android:layout_width="300dp"
@@ -87,26 +89,27 @@
             android:padding="10sp"
             android:textSize="20sp"
             android:textStyle="normal" />
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="170dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="170dp"
             android:layout_marginEnd="10dp"
             android:hint="@string/hos"
-            app:hintTextColor="@color/text"
             app:boxCornerRadiusBottomEnd="20dp"
             app:boxCornerRadiusBottomStart="20dp"
             app:boxCornerRadiusTopEnd="20dp"
             app:boxCornerRadiusTopStart="20dp"
             app:boxStrokeColor="@color/text"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            app:hintTextColor="@color/text">
 
             <AutoCompleteTextView
                 android:id="@+id/auto_complete_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="none"/>
+                android:inputType="none" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -115,18 +118,21 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10sp"
             android:layout_marginTop="250sp"
-            android:textStyle="bold"
-            android:textSize="15sp"
+            android:text="Add Alleged Image"
             android:textColor="@color/black"
-            android:text="Add Alleged Image" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/allegedimg"
             android:layout_width="300dp"
-            android:layout_marginTop="10dp"
             android:layout_height="210dp"
-            android:layout_marginBottom="100sp"
             android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100sp"
             app:srcCompat="@drawable/img_19" />
+
+
 
     </androidx.cardview.widget.CardView>
 

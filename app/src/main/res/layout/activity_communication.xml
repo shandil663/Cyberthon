@@ -1,53 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".Communication">
 
     <TextView
         android:id="@+id/textincident"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_marginStart="90sp"
         android:text="Cyber Communication"
         android:textAlignment="center"
+        android:layout_marginTop="10sp"
         android:textColor="@color/black"
         android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.018" />
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatview"
-        android:layout_width="409dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="700dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        android:layout_marginTop="60sp"
+       />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardchatid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50sp"
-        android:layout_marginTop="500sp"
+        android:layout_marginStart="7sp"
+        android:layout_marginTop="770sp"
         app:cardCornerRadius="15sp"
         app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.967">
+       >
 
         <EditText
             android:id="@+id/chatedit"
@@ -65,22 +55,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="50sp"
-        android:layout_marginStart="260sp"
-        android:layout_marginTop="550sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957">
-
+        android:layout_marginTop="770sp"
+        android:layout_marginStart="343sp"
+        >
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_gravity="center"
-            android:padding="5sp"
             android:layout_width="50sp"
             android:layout_height="50sp"
+            android:padding="5sp"
             android:src="@drawable/img_8" />
     </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

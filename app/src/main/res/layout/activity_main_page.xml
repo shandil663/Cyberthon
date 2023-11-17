@@ -1,331 +1,489 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainPage">
-
-    <TextView
-        android:id="@+id/textincident"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Cyber Crime Branch"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0sp"
-        android:layout_marginEnd="10sp"
-        app:cardCornerRadius="50sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019">
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="30dp"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_margin="10sp"
-            android:src="@drawable/img_2" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/newcard"
-        android:layout_width="190dp"
-        android:layout_height="170sp"
-        app:cardCornerRadius="20sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="150sp"
-            android:layout_height="110sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10sp"
-            app:srcCompat="@drawable/img_3" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:context=".MainPage"
+    tools:layout_editor_absoluteY="1dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="20sp"
-            android:text="File new Case"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textStyle="normal"
+            android:layout_weight="1"
+            android:layout_margin="20sp"
+            android:gravity="center">
 
-            />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/evicard1"
-        android:layout_width="190dp"
-        android:layout_height="170sp"
-        app:cardCornerRadius="20sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402">
+            <TextView
+                android:id="@+id/textincident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyber Crime Branch"
+                android:layout_marginStart="42sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
 
-        <ImageView
-            android:id="@+id/evi"
-            android:layout_width="170sp"
-            android:layout_height="120sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10sp"
-            app:srcCompat="@drawable/img_6" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="50sp"
+                android:layout_marginTop="2sp"
+                android:layout_marginEnd="2sp"
+                android:layout_marginBottom="2sp"
+                android:layout_marginStart="40sp"
+                >
 
-        <TextView
-            android:id="@+id/evi1"
-            android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/img_2" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="15sp"
-            android:text="Collected Evidences"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textStyle="normal"
+            android:layout_weight="1">
 
-            />
-    </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/newcard"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    app:cardCornerRadius="20sp"
+                   android:layout_margin="5sp"
+                    app:cardElevation="5sp"
+                    >
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/assignedcasescard"
-        android:layout_width="190dp"
-        android:layout_height="170sp"
-        app:cardCornerRadius="20sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667">
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="150sp"
+                        android:layout_height="110sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_3" />
 
-        <ImageView
-            android:id="@+id/assigned"
-            android:layout_width="170sp"
-            android:layout_height="120sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10sp"
-            app:srcCompat="@drawable/img_12" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="File new Case"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
 
-        <TextView
-            android:id="@+id/assignedcases"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="15sp"
-            android:text="Assigned Cases"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textStyle="normal"
+                        />
+                </androidx.cardview.widget.CardView>
 
-            />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/caseinsights"
-        android:layout_width="190dp"
-        android:layout_height="170sp"
-        app:cardCornerRadius="20sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932">
-
-        <ImageView
-            android:id="@+id/insight"
-            android:layout_width="170sp"
-            android:layout_height="120sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10sp"
-            app:srcCompat="@drawable/img_13" />
-
-        <TextView
-            android:id="@+id/casedata"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="15sp"
-            android:text="Case Insights"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textStyle="normal"
-
-            />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/chatcard1"
-        android:layout_width="190dp"
-        android:layout_height="170sp"
-        app:cardCornerRadius="20sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402">
-
-        <ImageView
-            android:id="@+id/chat"
-            android:layout_width="170sp"
-            android:layout_height="120sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10sp"
-            app:srcCompat="@drawable/img_7" />
-
-        <TextView
-            android:id="@+id/chat1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="15sp"
-            android:text="Communication"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textStyle="normal"
-
-            />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/emergencycard"
-        android:layout_width="190dp"
-        android:layout_height="170sp"
-        app:cardCornerRadius="20sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667">
-
-        <ImageView
-            android:id="@+id/emergencyimg"
-            android:layout_width="170sp"
-            android:layout_height="120sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10sp"
-            app:srcCompat="@drawable/img_11" />
-
-        <TextView
-            android:id="@+id/Emergency"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="15sp"
-            android:text="Emergency"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textStyle="normal"
-
-            />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/Resources"
-        android:layout_width="190dp"
-        android:layout_height="170sp"
-        app:cardCornerRadius="20sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932">
-
-        <ImageView
-            android:id="@+id/train"
-            android:layout_width="170sp"
-            android:layout_height="120sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10sp"
-            app:srcCompat="@drawable/img_14" />
-
-        <TextView
-            android:id="@+id/Train"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="15sp"
-            android:text="Training Resources"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textStyle="normal"
-
-            />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/casecard"
-        android:layout_width="190dp"
-        android:layout_height="170sp"
-        app:cardCornerRadius="20sp"
-        app:cardElevation="5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/casecard"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    android:layout_marginEnd="7sp"
+                    >
 
 
-        <ImageView
-            android:id="@+id/imagview"
-            android:layout_width="170sp"
-            android:layout_height="120sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10sp"
-            app:srcCompat="@drawable/img_4" />
+                    <ImageView
+                        android:id="@+id/imagview"
+                        android:layout_width="170sp"
+                        android:layout_height="120sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_4" />
 
-        <TextView
-            android:id="@+id/textviewh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="20sp"
-            android:text="Check Case Status"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textStyle="normal"
+                    <TextView
+                        android:id="@+id/textviewh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Check Case Status"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
 
-            />
-    </androidx.cardview.widget.CardView>
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/evicard1"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    android:layout_margin="5sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="150sp"
+                        android:layout_height="110sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_6" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Collected Evidences"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/chatcard1"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_marginEnd="7sp"
+                    app:cardElevation="5sp"
+                    >
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/imagview"
+                        android:layout_width="170sp"
+                        android:layout_height="120sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_7" />
+
+                    <TextView
+                        android:id="@+id/textviewh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Communication"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/assignedcasescard"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    android:layout_margin="5sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="150sp"
+                        android:layout_height="110sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_12" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Assigned Cases"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/emergencycard"
+                    android:layout_width="190dp"
+                    android:layout_marginEnd="7sp"
+                    android:layout_height="170sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/imagview"
+                        android:layout_width="170sp"
+                        android:layout_height="120sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_11" />
+
+                    <TextView
+                        android:id="@+id/textviewh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Emergency"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/incard"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    android:layout_margin="5sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="150sp"
+                        android:layout_height="110sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_13" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Case Insights"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Resources"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    android:layout_marginEnd="7sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/imagview"
+                        android:layout_width="170sp"
+                        android:layout_height="120sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_14" />
+
+                    <TextView
+                        android:id="@+id/textviewh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Training Resources"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/category"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    android:layout_margin="5sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="150sp"
+                        android:layout_height="110sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_3" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Case Categorisation"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/load"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    android:layout_marginEnd="7sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/imagview"
+                        android:layout_width="170sp"
+                        android:layout_height="120sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_4" />
+
+                    <TextView
+                        android:id="@+id/textviewh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Check Case Status"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/newcard"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    android:layout_margin="5sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="150sp"
+                        android:layout_height="110sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_3" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="File new Case"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/casecard"
+                    android:layout_width="190dp"
+                    android:layout_height="170sp"
+                    android:layout_marginEnd="7sp"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="5sp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/imagview"
+                        android:layout_width="170sp"
+                        android:layout_height="120sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        app:srcCompat="@drawable/img_4" />
+
+                    <TextView
+                        android:id="@+id/textviewh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="20sp"
+                        android:text="Check Case Status"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

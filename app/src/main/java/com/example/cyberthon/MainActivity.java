@@ -3,8 +3,12 @@ package com.example.cyberthon;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,6 +22,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.SetOptions;
@@ -68,10 +73,31 @@ public class MainActivity extends AppCompatActivity {
                        public void onComplete(@NonNull Task<Void> task) {
                            if(task.isSuccessful()){
                                if(task.isSuccessful()){
+
+
                                    documentReference.set(md,SetOptions.merge()).addOnCompleteListener(new OnCompleteListener<Void>() {
                                        @Override
                                        public void onComplete(@NonNull Task<Void> task) {
                                            if(task.isSuccessful()){
+                                               if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                                                   if(checkSelfPermission(android.Manifest.permission.SEND_SMS)== PackageManager.PERMISSION_GRANTED){
+                                                       try {
+
+                                                           SmsManager sms = SmsManager.getDefault();
+                                                           sms.sendTextMessage("+919149380289", null, "Dear Bhomik your compliant has been successfully  registered.\nFIR No: 3416", null, null);
+
+                                                       } catch (Exception e) {
+
+
+                                                           e.printStackTrace();
+
+                                                       }
+
+                                                   }
+                                                   else {
+                                                       requestPermissions(new String[]{Manifest.permission.SEND_SMS},1);
+                                                   }
+                                               }
                                                Toast.makeText(getApplicationContext(), "Complainant details success", Toast.LENGTH_SHORT).show();
                                            }
                                        }

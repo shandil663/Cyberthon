@@ -5,12 +5,16 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.telephony.SmsManager;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
@@ -74,8 +78,16 @@ public class Allged extends AppCompatActivity {
         docbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                UploadImage();
-                startActivity(new Intent(Allged.this, MainPage.class));
+                String title= txt1.getText().toString().trim();
+                String mobile=txt2.getText().toString().trim();
+                String location=txt3.getText().toString().trim();
+
+                if(TextUtils.isEmpty(title)&&TextUtils.isEmpty(mobile)&&TextUtils.isEmpty(location)){
+                    Toast.makeText(getApplicationContext(), "Enter all required fields", Toast.LENGTH_LONG).show();
+                }
+                else{
+                UploadImage();}
+                startActivity(new Intent(Allged.this, oading.class));
             }
         });
         storage=FirebaseStorage.getInstance();
@@ -163,7 +175,7 @@ public class Allged extends AppCompatActivity {
         String mobile=txt2.getText().toString().trim();
         String location=txt3.getText().toString().trim();
 
-        if(TextUtils.isEmpty(title)){
+        if(TextUtils.isEmpty(title)&&TextUtils.isEmpty(mobile)&&TextUtils.isEmpty(location)){
             Toast.makeText(getApplicationContext(), "Enter all required fields", Toast.LENGTH_LONG).show();
         }
         else {
@@ -183,6 +195,27 @@ public class Allged extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if(task.isSuccessful()){
+
+
+                                      if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                                          if(checkSelfPermission(Manifest.permission.SEND_SMS)== PackageManager.PERMISSION_GRANTED){
+                                              try {
+
+                                                  SmsManager sms = SmsManager.getDefault();
+                                                  sms.sendTextMessage("+919149380289", null, "Dear Bhomik your compliant has been successfully  registered.\nFIR No: 3416", null, null);
+
+                                              } catch (Exception e) {
+
+
+                                                  e.printStackTrace();
+
+                                              }
+
+                                          }
+                                          else {
+                                              requestPermissions(new String[]{Manifest.permission.SEND_SMS},1);
+                                          }
+                                      }
                                         Toast.makeText(getApplicationContext(), "Complaint registered Successfully", Toast.LENGTH_SHORT).show();
                                     }
                                 }

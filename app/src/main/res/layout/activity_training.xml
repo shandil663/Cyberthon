@@ -5,17 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Profile1">
+    tools:context=".training">
 
-    <Button
-        android:id="@+id/logout"
+    <TextView
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log out"
+        android:text="Pick a case"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.015" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/casestudy"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

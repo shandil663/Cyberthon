@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    android:background="@color/white"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Casedeepdetails">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="210sp"
+            android:layout_height="260sp"
+            android:layout_marginTop="30sp"
+            app:cardCornerRadius="20sp"
+            app:cardElevation="5sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView5"
+            app:layout_constraintEnd_toStartOf="@+id/cardView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <ImageView
+                android:id="@+id/productimagehere"
+                android:layout_width="200sp"
+                android:layout_height="250sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/img_26" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="170sp"
+            android:layout_height="150sp"
+            android:layout_marginTop="70sp"
+            app:cardCornerRadius="30sp"
+            app:cardElevation="5sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="10sp"
+                android:padding="8sp"
+                android:text="Mumbai Banking Phising Case"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5sp"
+                android:padding="8sp"
+                android:text="25 Nov, 2022"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="30sp"
+                android:padding="8sp"
+                android:text="23 Oct, 2023"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="10sp"
+            app:cardCornerRadius="30sp"
+            app:cardElevation="5sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4"
+            app:layout_constraintVertical_bias="0.5">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="10sp"
+                app:srcCompat="@drawable/img_25" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="13sp"
+                android:maxEms="5"
+                android:text="Appointed Officer"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/officer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="50sp"
+                android:layout_marginEnd="13sp"
+                android:maxEms="5"
+                android:text="Chandar Gupt Morya"
+                android:textSize="12sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="190sp"
+            android:layout_height="300sp"
+            android:layout_marginTop="15sp"
+            app:cardCornerRadius="30sp"
+            app:cardElevation="5sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView7"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/vicdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70sp"
+                android:maxEms="20"
+                android:text="This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain. "
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/algdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                android:text="Alleged Details"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/algname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|end"
+                android:layout_marginTop="60sp"
+                android:layout_marginEnd="5sp"
+                android:text="Bhomik Jain" />
+
+            <TextView
+                android:id="@+id/vicage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|end"
+                android:layout_marginTop="90sp"
+                android:layout_marginEnd="5sp"
+                android:text="25 years old" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="50sp"
+                app:srcCompat="@drawable/bhomik" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="190sp"
+            android:layout_height="300sp"
+            android:layout_marginTop="15sp"
+            app:cardCornerRadius="30sp"
+            app:cardElevation="5sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView6"
+            app:layout_constraintEnd_toStartOf="@+id/cardView5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/vicdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70sp"
+                android:maxEms="20"
+                android:text="This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain. "
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                android:text="Victim Details"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vicname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|end"
+                android:layout_marginTop="60sp"
+                android:layout_marginEnd="5sp"
+                android:text="Sahil Shandil" />
+
+            <TextView
+                android:id="@+id/vicage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|end"
+                android:layout_marginTop="90sp"
+                android:layout_marginEnd="5sp"
+                android:text="20 years old" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="50sp"
+                app:srcCompat="@drawable/sahil" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="390sp"
+            android:layout_height="800sp"
+            android:layout_marginTop="10sp"
+            app:cardCornerRadius="30sp"
+            app:cardElevation="5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20sp"
+                android:text="Case Summary"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descriptionhere"
+                android:layout_width="wrap_content"
+                android:layout_height="230sp"
+                android:layout_margin="40sp"
+                android:maxEms="20"
+                android:text="This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain.This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain.This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain.This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain.This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain."
+                android:textAlignment="center" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="200sp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10sp"
+                android:layout_marginBottom="270sp"
+                app:cardCornerRadius="30sp"
+                app:cardElevation="1sp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="170sp"
+                    android:layout_gravity="center"
+                    android:layout_height="190sp"
+                    app:srcCompat="@drawable/img_27" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="200sp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="270sp"
+                app:cardCornerRadius="30sp"
+                app:cardElevation="1sp">
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="170sp"
+                    android:layout_height="190sp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/img_28" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="200sp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10sp"
+                android:layout_marginBottom="60sp"
+                app:cardCornerRadius="30sp"
+                app:cardElevation="1sp">
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="170sp"
+                    android:layout_height="190sp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/img_29" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="200sp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="60sp"
+                app:cardCornerRadius="30sp"
+                app:cardElevation="1sp">
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="170sp"
+                    android:layout_height="190sp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/img_30" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100sp"
+                android:text="Case Evidences" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Case Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

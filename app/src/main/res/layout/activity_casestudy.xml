@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    android:background="@color/white"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".casestudy">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Officer Training"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380sp"
+            android:layout_height="260sp"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.079">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="360sp"
+                android:layout_height="290sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/img_32" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            app:cardCornerRadius="100sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313">
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/previous" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            app:cardCornerRadius="100sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.667"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/nxt" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380sp"
+            android:layout_height="800sp"
+            app:cardCornerRadius="20sp"
+            app:cardElevation="10sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20sp"
+                android:text="Case Description"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textflow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="320sp"
+                android:text="Case Flow Chart"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descriptionhere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60sp"
+                android:maxEms="20"
+                android:text="This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain.This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy , so you can enjoy it even in the rain.This portable hammock is perfect for camping, hiking, or just relaxing in your backyard. It's made of lightweight, durable nylon and sets up in minutes. The hammock is also water-resistant, so you can enjoy it even in the rain."
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_gravity="center"
+                android:layout_marginTop="170sp"
+                android:layout_width="370sp"
+                android:layout_height="400sp"
+                app:srcCompat="@drawable/img_33" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
